@@ -494,7 +494,7 @@ Här ovan ser vi att HUR det fungerar är väldigt olika, men funktionaliteten f
 Det är inte någon form av programmering språk utan mer ett regelvärk för att göra diagram om hur din kod körs, hur klasser interagerar med andra klasser m.m.
 
 I detta exempel så har vi 2 UML diagram på klassen `Bok` och klassen `Bibliotek`
-![image](https://github.com/TobiasSkog/TheoryHandbook/assets/11568812/3d29d755-8124-4b88-abe6-9b98a3384366)
+![image](https://github.com/TobiasSkog/TheoryHandbook/blob/main/UML-Exempel-TheoryHandBook.png "UML Bok & Bibliotek")
 
 
 Här ser vi att `Bibliotek` har en private property av typen `List<Bok>` som heter Böcker, vi har också 3 publika metoder
