@@ -3,16 +3,16 @@ My solution to the Theory Handbook assignment by Tobias Skog of class .NET23
 
 # 1. Vad är skillnaden på .NET och C#?
 ## .NET
-**.NET** är ett verktyg för utvecklare, ett så kallat [framework](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Framework), som Microsoft utvecklade. 
-**.NET** har ett många verktyg och en uppsjö av [libraries](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Libraries) som underlättar utvecklandet av applikationer riktade mot webben, mobiler och datorer.
+**.NET** är ett verktyg för utvecklare, ett så kallat [framework](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Framework.md), som Microsoft utvecklade. 
+**.NET** har ett många verktyg och en uppsjö av [libraries](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Libraries.md) som underlättar utvecklandet av applikationer riktade mot webben, mobiler och datorer.
 
-**.NET Core** är ett så kallat [cross-platform](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Cross-Platform) [framework](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Framework) som tillåter utvecklaren att lätt skapa produkter för olika typer av operativsystem (Windows, Linux, macOS, iOS, Android).
+**.NET Core** är ett så kallat [cross-platform](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Cross-Platform.md) [framework](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Framework.md) som tillåter utvecklaren att lätt skapa produkter för olika typer av operativsystem (Windows, Linux, macOS, iOS, Android).
 
 **.NET Core** 1.0 släpptes i juni 2016 och sedan dess har .NET vart open-source!
 
-**.NET** använder sig av **CLR (Common Language Runtime)** vilket är en implementation av **[CLI](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLI)** som är en internationell standard. Detta innebär att att **.NET** kan köra kod och libraries som är skrivna i olika programmeringsspråk men är kompatibel med **.NET's** [CLR](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLR) och [CLI](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLI).
-**.NET's** [CLR](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLR) använder sig av **[JIT](https://github.com/TobiasSkog/TheoryHandbook/blob/main/JIT)** kompilering som konverterar [IL](https://github.com/TobiasSkog/TheoryHandbook/blob/main/IL) koden till instruktioner som datorn förstår [Binär kod](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Bin%C3%A4r%20Kod). Språkinteroperabilitet är en nyckelfunktionen i **NET** [IL](https://github.com/TobiasSkog/TheoryHandbook/blob/main/IL) koden producerad av C# kompilatorn överensstämmer med **[CTS (Common Type Specification)](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CTS)**.
-Vilket innebär att IL kod som är genererad i C# kan interagera med annan kod som har är kompatibel med samma CTS som **.NET** kan tyda, dvs Du är inte begränsad till att enbart använda dig av programmeringsspråket C# då du som utvecklare använder dig av **.NET** och så länge språket är kompatibelt med **.NET** [CTS](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CTS) så kan kod i olika programmeringsspråk kommunicera med varandra utan avbrott eller kostnad av hastighet eller prestanda.
+**.NET** använder sig av **CLR (Common Language Runtime)** vilket är en implementation av **[CLI](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLI.md)** som är en internationell standard. Detta innebär att att **.NET** kan köra kod och libraries som är skrivna i olika programmeringsspråk men är kompatibel med **.NET's** [CLR](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLR.md) och [CLI](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLI.md).
+**.NET's** [CLR](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLR.md) använder sig av **[JIT](https://github.com/TobiasSkog/TheoryHandbook/blob/main/JIT.md)** kompilering som konverterar [IL](https://github.com/TobiasSkog/TheoryHandbook/blob/main/IL.md) koden till instruktioner som datorn förstår [Binär kod](https://github.com/TobiasSkog/TheoryHandbook/blob/main/Bin%C3%A4rKod.md). Språkinteroperabilitet är en nyckelfunktionen i **NET** [IL](https://github.com/TobiasSkog/TheoryHandbook/blob/main/IL.md) koden producerad av C# kompilatorn överensstämmer med **[CTS (Common Type Specification)](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CTS.md)**.
+Vilket innebär att IL kod som är genererad i C# kan interagera med annan kod som har är kompatibel med samma CTS som **.NET** kan tyda, dvs Du är inte begränsad till att enbart använda dig av programmeringsspråket C# då du som utvecklare använder dig av **.NET** och så länge språket är kompatibelt med **.NET** [CTS](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CTS.md) så kan kod i olika programmeringsspråk kommunicera med varandra utan avbrott eller kostnad av hastighet eller prestanda.
 
 **.NET** är inte begränsat till att bara använda sig av programmeringsspråket **C#** utan stödjer **C#**, **F#**, **Visual Basics**, **C++**, **ClojureCLR**, **IronPython**, **PowerBuilder**, **Swift**, **PowerShell** och mer!
 ## C\#
@@ -494,7 +494,8 @@ Här ovan ser vi att HUR det fungerar är väldigt olika, men funktionaliteten f
 Det är inte någon form av programmering språk utan mer ett regelvärk för att göra diagram om hur din kod körs, hur klasser interagerar med andra klasser m.m.
 
 I detta exempel så har vi 2 UML diagram på klassen `Bok` och klassen `Bibliotek`
-![[Pasted image 20231102162918.png]]
+![image](https://github.com/TobiasSkog/TheoryHandbook/assets/11568812/3d29d755-8124-4b88-abe6-9b98a3384366)
+
 
 Här ser vi att `Bibliotek` har en private property av typen `List<Bok>` som heter Böcker, vi har också 3 publika metoder
 1. publika konstruktorn `Bibliotek` som inte tar någon input och används för att skapa en ny instans av klassen
@@ -580,7 +581,7 @@ Används framförallt för att utveckla ASP.NET applikationer för windows.
 ## Historiken för .NET
 **.NET Framework 1.0** släpptes 2002-01-15. 
 
-2016 började Microsoft med **.NET Core**, ett sätt att återskapa **.NET Framework's** funktionalitet men förbättra hastigheten. Dem ändrade så att **.NET Frameworks** [[#^4475eb|CLI]] är nu **.NET Cores** **[[#^b4abd3|CLR (Core Language Runtime)]]**, de ändrade hur [[#^45b69d|IL]] skulle köras, vad som exekvera och när det skulle exekveras, vad som skulle stödjas och inte stödjas och släppte en del bakåt kompatibilitet. Detta ledde till en massiv ökning i hastighet. 
+2016 började Microsoft med **.NET Core**, ett sätt att återskapa **.NET Framework's** funktionalitet men förbättra hastigheten. Dem ändrade så att **.NET Frameworks** [CLI](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLI.md) är nu **.NET Cores** **[CLR (Core Language Runtime)](https://github.com/TobiasSkog/TheoryHandbook/blob/main/CLR.md)**, de ändrade hur [IL](https://github.com/TobiasSkog/TheoryHandbook/blob/main/IL.md) skulle köras, vad som exekvera och när det skulle exekveras, vad som skulle stödjas och inte stödjas och släppte en del bakåt kompatibilitet. Detta ledde till en massiv ökning i hastighet. 
 Det övergick också till helt Open-Source när det började med **.NET Core**!
 De släppte även Visual Studio Code som Open-Source!
 Detta ändrade deras strategi från att tjäna pengar på **.NET Framework** genom att folk installerade Windows på deras datorer eller serverar till att sälja cloud services.
@@ -593,4 +594,4 @@ När **.NET 5 Core** släpptes så slutade de använda ordet `Core` för att det
 
 När **.Net 6** släpptes så var målet att bara ha ett abstrakt lager kvar - **.NET 6** 
 **.NET Framework** får inte längre nya uppdateringar med nytt innehåll sedan version 4.8, men kommer fortfarande att stödjas långt framöver. Medans **.NET 6, 7, 8...** Fortsätter att utvecklas och få ny funktionalitet och nya versioner.
-Nya versioner av C# kommer att fungera med nyare versioner av **.NET** för att **.NET** kommer stödja nya versioner [[#^45b69d|IL]] som kommer vara aktuellt då den versionen släpps.
+Nya versioner av C# kommer att fungera med nyare versioner av **.NET** för att **.NET** kommer stödja nya versioner [IL](https://github.com/TobiasSkog/TheoryHandbook/blob/main/IL.md) som kommer vara aktuellt då den versionen släpps.
